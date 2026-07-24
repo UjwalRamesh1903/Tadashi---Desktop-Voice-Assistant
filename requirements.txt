@@ -1,0 +1,8 @@
+requests
+beautifulsoup4
+pyttsx3
+SpeechRecognition
+pywhatkit
+plyer
+speedtest-cli
+pyautogui
