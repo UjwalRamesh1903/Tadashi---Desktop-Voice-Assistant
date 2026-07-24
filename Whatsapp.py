@@ -1,13 +1,9 @@
 import pywhatkit
 import pyttsx3
 import datetime
-import speech_recognition
-import webbrowser
-from bs4 import BeautifulSoup
-from time import sleep
-import os 
 from datetime import timedelta
-from datetime import datetime
+
+import speech_recognition
 
 engine = pyttsx3.init("sapi5")
 voices = engine.getProperty("voices")
@@ -29,7 +25,7 @@ def takeCommand():
         print("Understanding..")
         query  = r.recognize_google(audio,language='en-in')
         print(f"You Said: {query}\n")
-    except Exception as e:
+    except Exception:
         print("Say that again")
         return "None"
     return query
