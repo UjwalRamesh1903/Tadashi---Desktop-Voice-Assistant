@@ -20,7 +20,6 @@ def latestnews():
             "technology" :"https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=#here paste your api key"
 }
 
-    content = None
     url = None
     speak("Which field news do you want, [business] , [health] , [technology], [sports] , [entertainment] , [science]")
     field = input("Type field news that you want: ")
